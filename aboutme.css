@@ -1,49 +1,49 @@
 @import url("https://fonts.googleapis.com/css2?family=Merriweather&display=swap");
 
+/* Banner Image Styling */
 
-.banner-image{
-	background-image: url('images/wallpaper.jpeg');
-	background-size: cover;
+
+h1 {
+    text-align: center;
 }
 
-h1{
-	text-align: center;
+p {
+    text-align: center;
 }
 
-p{
-	text-align: center;
+h2 {
+    text-align: center;
+    border-bottom: 3px solid royalblue; /* added to give emphasis */
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    color: royalblue;
 }
 
-h2{
-	text-align: center;
+span {
+    color: royalblue;
+    font-size: 25px;
+    text-align: center;
 }
 
-span{
-	color: royalblue;
-	font-size: 25px;
-	text-align: center;
-}
-
-
-/* Social Icons */
+/* Social Icons Styling */
 html {
     background: rgb(41, 41, 41);
     background: -moz-linear-gradient(
-      180deg,
-      rgba(41, 41, 41, 1) 0%,
-      rgba(24, 30, 48, 1) 100%
+        180deg,
+        rgba(41, 41, 41, 1) 0%,
+        rgba(24, 30, 48, 1) 100%
     );
     background: -webkit-linear-gradient(
-      180deg,
-      rgba(41, 41, 41, 1) 0%,
-      rgba(24, 30, 48, 1) 100%
+        180deg,
+        rgba(41, 41, 41, 1) 0%,
+        rgba(24, 30, 48, 1) 100%
     );
     background: linear-gradient(
-      180deg,
-      rgba(41, 41, 41, 1) 0%,
-      rgba(24, 30, 48, 1) 100%
+        180deg,
+        rgba(41, 41, 41, 1) 0%,
+        rgba(24, 30, 48, 1) 100%
     );
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#292929",endColorstr="#181e30",GradientType=1);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#292929", endColorstr="#181e30", GradientType=1);
     height: 100%;
     width: 100%;
 }
@@ -55,20 +55,192 @@ html {
     flex-wrap: wrap;
     margin: 1rem;
     list-style-type: none;
-  }
+}
 
 .contact-links li {
     padding: 1rem;
 }
-  
+
 .fab {
     font-size: 5rem;
 }
 
+/* About Me Styling */
+section#about {
+    font-family: 'Merriweather', sans-serif;
+    color: #333;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+}
 
+strong {
+    color: royalblue;
+}
 
+p {
+    margin-bottom: 20px;
+    text-align: justify; /* changed to make it left-justified and clean */
+}
 
+/* Navbar Styling */
+.navbar-light .navbar-brand {
+  color: black;
+}
 
+.navbar-light .navbar-nav .nav-link {
+  color: black;
+  transition: color 0.3s;
+}
 
+.navbar-light .navbar-nav .nav-link:hover, 
+.navbar-light .navbar-nav .dropdown-item:hover {
+  color: royalblue;
+}
+
+/* Remove the shadow from the navbar */
+.navbar {
+  box-shadow: none !important;
+}
+
+/* Dropdown menu styling (if you want) */
+.dropdown-menu {
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+}
+
+/* Experience Section Styling */
+section#experience {
+  font-family: 'Merriweather', sans-serif;
+  color: #333;
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+}
+
+.experience-title {
+  display: block;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: royalblue;
+}
+
+.experience-break {
+  width: 50%;
+  margin: 20px auto;
+  border-color: royalblue;
+}
+
+/* Projects Section Styling */
+section#projects {
+  font-family: 'Merriweather', sans-serif;
+  color: #333;
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+}
+
+.project {
+  margin-bottom: 30px;
+}
+
+.project-title {
+  display: block;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: royalblue;
+  font-size: 25px;
+}
+
+.project p {
+  text-align: justify; /* makes it left-justified and clean */
+  margin-bottom: 20px;
+}
+
+/* Skills Section Styling */
+section#skills {
+  font-family: 'Merriweather', sans-serif;
+  color: #333;
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+  margin-bottom: 20px;
+  text-align: center; /* Center the content */
+}
+
+.skill-category {
+  margin-bottom: 20px;
+}
+
+.skill-category h3 {
+  display: inline-block; /* Make h3 inline to be affected by parent's text-align */
+}
+
+.skill-category ul {
+  list-style-type: none;
+  padding-left: 0;
+  display: inline-block; /* Make ul inline-block to center its content */
+  text-align: left; /* Align ul's inner content to the left */
+}
+
+.skill-category li {
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Center the content horizontally within each list item */
+}
+
+.placeholder-icon {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  background-color: royalblue;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.contact-container {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+  margin-top: 20px;
+  text-align: center;
+}
+
+#contact h2 {
+  font-family: 'Merriweather', sans-serif;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.contact-links {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.contact-links li {
+  display: inline-block;
+}
+
+.contact-links a {
+  color: royalblue;
+  font-size: 24px;
+  transition: 0.3s ease-in-out;
+}
+
+.contact-links a:hover {
+  color: #333;
+  transform: scale(1.1);
+}
 
 
